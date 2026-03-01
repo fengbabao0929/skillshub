@@ -1,0 +1,172 @@
+{
+  "skills": {
+    "/wx-create": {
+      "description": "交互式爆款文章创作 - 引导完成主题输入、标题选择、大纲生成、文章创作全流程",
+      "command": "node",
+      "args": [
+        "E:\\Github\\skillshub\\wechat-auto-publisher\\scripts\\content-creator.cjs",
+        "create"
+      ],
+      "working_directory": "."
+    },
+    "/wx-titles": {
+      "description": "生成爆款标题选项 - 基于主题生成多个爆款标题供选择",
+      "command": "node",
+      "args": [
+        "E:\\Github\\skillshub\\wechat-auto-publisher\\scripts\\content-creator.cjs",
+        "titles",
+        "{topic}",
+        "{count:5}"
+      ],
+      "working_directory": "."
+    },
+    "/wx-write": {
+      "description": "生成完整爆款文章 - 基于主题快速生成爆款结构文章",
+      "command": "node",
+      "args": [
+        "E:\\Github\\skillshub\\wechat-auto-publisher\\scripts\\content-creator.cjs",
+        "write",
+        "{topic}",
+        "{title}"
+      ],
+      "working_directory": "."
+    },
+    "/wx-outline": {
+      "description": "生成文章大纲 - 为主题生成爆款结构大纲",
+      "command": "node",
+      "args": [
+        "E:\\Github\\skillshub\\wechat-auto-publisher\\scripts\\article-writer.cjs",
+        "{topic}"
+      ],
+      "working_directory": "."
+    },
+    "/wx-trend": {
+      "description": "财经热点全景报告 - 整合热门话题、最新资讯、爆款规律、推荐话题的完整报告",
+      "command": "node",
+      "args": [
+        "E:\\Github\\skillshub\\wechat-auto-publisher\\scripts\\trend-hub.cjs",
+        "report",
+        "{category:all}",
+        "{limit:10}"
+      ],
+      "working_directory": "."
+    },
+    "/wx-hot": {
+      "description": "搜索热门话题 - 搜索财经领域热门话题（支持分类筛选）",
+      "command": "node",
+      "args": [
+        "E:\\Github\\skillshub\\wechat-auto-publisher\\scripts\\trend-hub.cjs",
+        "hot",
+        "{category:all}",
+        "{limit:10}"
+      ],
+      "working_directory": "."
+    },
+    "/wx-real-hot": {
+      "description": "搜索实时热点 - 使用网络API搜索当前最新的财经热点话题",
+      "command": "node",
+      "args": [
+        "E:\\Github\\skillshub\\wechat-auto-publisher\\scripts\\trend-hub.cjs",
+        "real",
+        "{query:财经热点 财务税务}",
+        "{limit:10}"
+      ],
+      "working_directory": "."
+    },
+    "/wx-news": {
+      "description": "获取行业资讯 - 获取最新财务、税务、政策资讯",
+      "command": "node",
+      "args": [
+        "E:\\Github\\skillshub\\wechat-auto-publisher\\scripts\\trend-hub.cjs",
+        "news",
+        "{category:all}",
+        "{limit:15}"
+      ],
+      "working_directory": "."
+    },
+    "/wx-viral": {
+      "description": "分析竞品爆款文章 - 分析同类账号爆款文章规律",
+      "command": "node",
+      "args": [
+        "E:\\Github\\skillshub\\wechat-auto-publisher\\scripts\\trend-hub.cjs",
+        "viral",
+        "{keyword:}",
+        "{limit:10}"
+      ],
+      "working_directory": "."
+    },
+    "/wx-recommend": {
+      "description": "推荐写作话题 - 基于热点、政策、竞品分析智能推荐写作话题",
+      "command": "node",
+      "args": [
+        "E:\\Github\\skillshub\\wechat-auto-publisher\\scripts\\trend-hub.cjs",
+        "recommend",
+        "{category:all}",
+        "{limit:10}"
+      ],
+      "working_directory": "."
+    },
+    "/wx-images": {
+      "description": "生成文章配图提示词 - 为文章生成封面图、信息图、引导图的AI绘图提示词",
+      "command": "node",
+      "args": [
+        "E:\\Github\\skillshub\\wechat-auto-publisher\\scripts\\image-prompt-generator.cjs",
+        "{article_path}"
+      ],
+      "working_directory": "."
+    },
+    "/wx-generate-images": {
+      "description": "调用AI生成文章配图 - 基于提示词文件批量生成图片（需先配置image.env）",
+      "command": "python",
+      "args": [
+        "E:\\Github\\skillshub\\wechat-auto-publisher\\scripts\\generate_images.py",
+        "--input",
+        "{prompts_file}",
+        "--out",
+        "{output_dir:./outputs/images}"
+      ],
+      "working_directory": "."
+    },
+    "/wx-publish": {
+      "description": "发布文章到公众号草稿箱",
+      "command": "node",
+      "args": [
+        "E:\\Github\\skillshub\\wechat-auto-publisher\\scripts\\wechat-publisher.cjs",
+        "--article",
+        "{article_path}",
+        "--action",
+        "draft"
+      ],
+      "working_directory": "."
+    },
+    "/wx-publish-now": {
+      "description": "立即发布文章到公众号",
+      "command": "node",
+      "args": [
+        "E:\\Github\\skillshub\\wechat-auto-publisher\\scripts\\wechat-publisher.cjs",
+        "--article",
+        "{article_path}",
+        "--action",
+        "publish"
+      ],
+      "working_directory": "."
+    },
+    "/wx-config": {
+      "description": "配置微信公众号凭证",
+      "command": "node",
+      "args": [
+        "E:\\Github\\skillshub\\wechat-auto-publisher\\scripts\\wechat-config.cjs"
+      ],
+      "working_directory": "."
+    },
+    "/wx-test": {
+      "description": "测试微信API连接",
+      "command": "node",
+      "args": [
+        "E:\\Github\\skillshub\\wechat-auto-publisher\\scripts\\wechat-config.cjs",
+        "--test"
+      ],
+      "working_directory": "."
+    }
+  }
+}

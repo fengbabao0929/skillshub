@@ -1,0 +1,65 @@
+{
+  "skills": {
+    "/skill-card": {
+      "description": "生成指定角色的技能卡",
+      "command": "node",
+      "args": [
+        "E:\\\\Claude Code\\\\claude\\\\skills\\\\skill-card-generator.js",
+        "--role",
+        "{role}"
+      ],
+      "working_directory": "."
+    },
+    "/skill-card-all": {
+      "description": "生成所有角色的技能卡",
+      "command": "node",
+      "args": [
+        "E:\\\\Claude Code\\\\claude\\\\skills\\\\skill-card-generator.js",
+        "--all"
+      ],
+      "working_directory": "."
+    },
+    "/skill-card-save": {
+      "description": "生成指定角色的技能卡并保存到文件",
+      "command": "node",
+      "args": [
+        "E:\\\\Claude Code\\\\claude\\\\skills\\\\skill-card-generator.js",
+        "--role",
+        "{role}",
+        "--save"
+      ],
+      "working_directory": "."
+    },
+    "/skill-card-all-save": {
+      "description": "生成所有角色的技能卡并保存到文件",
+      "command": "node",
+      "args": [
+        "E:\\\\Claude Code\\\\claude\\\\skills\\\\skill-card-generator.js",
+        "--all",
+        "--save"
+      ],
+      "working_directory": "."
+    },
+    "/skill-card-md": {
+      "description": "生成指定角色的技能卡（Markdown格式）",
+      "command": "node",
+      "args": [
+        "E:\\\\Claude Code\\\\claude\\\\skills\\\\skill-card-generator.js",
+        "--role",
+        "{role}",
+        "--markdown"
+      ],
+      "working_directory": "."
+    },
+    "/skill-card-all-md": {
+      "description": "生成所有角色的技能卡（Markdown格式）",
+      "command": "node",
+      "args": [
+        "E:\\\\Claude Code\\\\claude\\\\skills\\\\skill-card-generator.js",
+        "--all",
+        "--markdown"
+      ],
+      "working_directory": "."
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "skills": {
+    "/training": {
+      "description": "生成2天培训课程大纲",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\training-outline-generator.js",
+        "{topic}"
+      ],
+      "working_directory": "."
+    },
+    "/training-1day": {
+      "description": "生成1天培训课程大纲",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\training-outline-generator.js",
+        "{topic}",
+        "--days",
+        "1"
+      ],
+      "working_directory": "."
+    },
+    "/training-2day": {
+      "description": "生成2天培训课程大纲",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\training-outline-generator.js",
+        "{topic}",
+        "--days",
+        "2"
+      ],
+      "working_directory": "."
+    },
+    "/training-save": {
+      "description": "生成培训大纲并保存到文件",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\training-outline-generator.js",
+        "{topic}",
+        "--save"
+      ],
+      "working_directory": "."
+    }
+  }
+}

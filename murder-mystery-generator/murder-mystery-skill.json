@@ -1,0 +1,45 @@
+{
+  "skills": {
+    "/murder": {
+      "description": "生成培训体验类剧本杀大纲",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\murder-mystery-generator.js",
+        "{topic}"
+      ],
+      "working_directory": "."
+    },
+    "/murder-full": {
+      "description": "生成完整剧本杀（含角色卡和DM手册）",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\murder-mystery-generator.js",
+        "{topic}",
+        "--full"
+      ],
+      "working_directory": "."
+    },
+    "/murder-players": {
+      "description": "生成指定人数的剧本杀",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\murder-mystery-generator.js",
+        "{topic}",
+        "--players",
+        "{count}"
+      ],
+      "working_directory": "."
+    },
+    "/murder-save": {
+      "description": "生成剧本杀并保存到文件",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\murder-mystery-generator.js",
+        "{topic}",
+        "--full",
+        "--save"
+      ],
+      "working_directory": "."
+    }
+  }
+}

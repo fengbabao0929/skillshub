@@ -1,0 +1,354 @@
+{
+  "skills": {
+    "/story": {
+      "description": "启动人生故事工作台",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\life-story-generator.js"
+      ],
+      "working_directory": "."
+    },
+    "/story-entry": {
+      "description": "显示切入点引导",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\life-story-interviewer.js",
+        "--entry"
+      ],
+      "working_directory": "."
+    },
+    "/story-method": {
+      "description": "查看深度访谈方法论",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\life-story-interviewer.js",
+        "--methodology"
+      ],
+      "working_directory": "."
+    },
+    "/story-write-method": {
+      "description": "查看写作方法论",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\life-story-writer.js",
+        "help"
+      ],
+      "working_directory": "."
+    },
+    "/story-stats": {
+      "description": "查看访谈记忆统计",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\life-story-memory.js",
+        "stats"
+      ],
+      "working_directory": "."
+    },
+    "/story-context": {
+      "description": "查看当前访谈上下文",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\life-story-memory.js",
+        "context"
+      ],
+      "working_directory": "."
+    },
+    "/story-export": {
+      "description": "导出访谈记录",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\life-story-memory.js",
+        "export"
+      ],
+      "working_directory": "."
+    },
+    "/story-childhood": {
+      "description": "访谈：童年与启蒙",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\life-story-interviewer.js",
+        "--theme",
+        "childhood"
+      ],
+      "working_directory": "."
+    },
+    "/story-youth": {
+      "description": "访谈：青春与选择",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\life-story-interviewer.js",
+        "--theme",
+        "youth"
+      ],
+      "working_directory": "."
+    },
+    "/story-turning": {
+      "description": "访谈：转折与突破",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\life-story-interviewer.js",
+        "--theme",
+        "turning"
+      ],
+      "working_directory": "."
+    },
+    "/story-struggle": {
+      "description": "访谈：挣扎与矛盾",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\life-story-interviewer.js",
+        "--theme",
+        "struggle"
+      ],
+      "working_directory": "."
+    },
+    "/story-meaning": {
+      "description": "访谈：意义与使命",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\life-story-interviewer.js",
+        "--theme",
+        "meaning"
+      ],
+      "working_directory": "."
+    },
+    "/story-vulnerable": {
+      "description": "访谈：脆弱与真实",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\life-story-interviewer.js",
+        "--theme",
+        "vulnerable"
+      ],
+      "working_directory": "."
+    },
+    "/story-arc": {
+      "description": "分析情感弧线",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\life-story-writer.js",
+        "analyze"
+      ],
+      "working_directory": "."
+    },
+    "/story-scenes": {
+      "description": "查看场景清单",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\life-story-writer.js",
+        "scenes"
+      ],
+      "working_directory": "."
+    },
+    "/story-write": {
+      "description": "生成写作指令",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\life-story-writer.js",
+        "generate"
+      ],
+      "working_directory": "."
+    },
+    "/story-write-hero": {
+      "description": "生成英雄之旅风格写作指令",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\life-story-writer.js",
+        "generate",
+        "--style",
+        "hero"
+      ],
+      "working_directory": "."
+    },
+    "/story-write-intimate": {
+      "description": "生成私密对话风格写作指令",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\life-story-writer.js",
+        "generate",
+        "--style",
+        "intimate"
+      ],
+      "working_directory": "."
+    },
+    "/story-write-philo": {
+      "description": "生成哲思风格写作指令",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\life-story-writer.js",
+        "generate",
+        "--style",
+        "philosophical"
+      ],
+      "working_directory": "."
+    },
+    "/story-write-narrative": {
+      "description": "生成叙事小说风格写作指令",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\life-story-writer.js",
+        "generate",
+        "--style",
+        "narrative"
+      ],
+      "working_directory": "."
+    },
+    "/story-write-confession": {
+      "description": "生成忏悔录风格写作指令",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\life-story-writer.js",
+        "generate",
+        "--style",
+        "confession"
+      ],
+      "working_directory": "."
+    },
+    "/story-write-business": {
+      "description": "生成商业洞察风格写作指令",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\life-story-writer.js",
+        "generate",
+        "--style",
+        "business"
+      ],
+      "working_directory": "."
+    },
+    "/story-write-humorous": {
+      "description": "生成自嘲幽默风格写作指令",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\life-story-writer.js",
+        "generate",
+        "--style",
+        "humorous"
+      ],
+      "working_directory": "."
+    },
+    "/story-write-minimal": {
+      "description": "生成极简主义风格写作指令",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\life-story-writer.js",
+        "generate",
+        "--style",
+        "minimal"
+      ],
+      "working_directory": "."
+    },
+    "/story-write-lyric": {
+      "description": "生成诗意散文风格写作指令",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\life-story-writer.js",
+        "generate",
+        "--style",
+        "lyric"
+      ],
+      "working_directory": "."
+    },
+    "/story-write-conversion": {
+      "description": "生成成交型叙事写作指令（营销专用）",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\life-story-writer.js",
+        "generate",
+        "--style",
+        "conversion"
+      ],
+      "working_directory": "."
+    },
+    "/story-write-career": {
+      "description": "生成职场成交型写作指令",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\life-story-writer.js",
+        "generate",
+        "--style",
+        "career_pitch"
+      ],
+      "working_directory": "."
+    },
+    "/story-write-education": {
+      "description": "生成教育成交型写作指令",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\life-story-writer.js",
+        "generate",
+        "--style",
+        "education_pitch"
+      ],
+      "working_directory": "."
+    },
+    "/story-write-save": {
+      "description": "生成写作指令并保存",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\life-story-writer.js",
+        "generate",
+        "--style",
+        "{style}",
+        "--save"
+      ],
+      "working_directory": "."
+    },
+    "/article-analyze": {
+      "description": "分析对标文章结构风格",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\article-analyzer.js",
+        "analyze",
+        "--file",
+        "{path}"
+      ],
+      "working_directory": "."
+    },
+    "/article-guide": {
+      "description": "生成对标文章模仿指南",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\article-analyzer.js",
+        "guide",
+        "--file",
+        "{path}"
+      ],
+      "working_directory": "."
+    },
+    "/story-imitate": {
+      "description": "基于对标文章风格生成故事",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\article-analyzer.js",
+        "imitate",
+        "--file",
+        "{path}"
+      ],
+      "working_directory": "."
+    },
+    "/pitch-gen": {
+      "description": "成交型叙事生成器（根据目的/读者/行业定制）",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\conversion-story-generator.js",
+        "generate",
+        "--purpose",
+        "{purpose}",
+        "--audience",
+        "{audience}",
+        "--industry",
+        "{industry}"
+      ],
+      "working_directory": "."
+    },
+    "/pitch-list": {
+      "description": "列出成交型叙事生成器的所有可用选项",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\conversion-story-generator.js",
+        "list"
+      ],
+      "working_directory": "."
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "skills": {
+    "/ip": {
+      "description": "启动高转化IP自我介绍生成器（增强版）",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\ip-intro-generator.js"
+      ],
+      "working_directory": "."
+    },
+    "/ip-select": {
+      "description": "显示IP类型选择器",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\ip-intro-generator.js",
+        "--select"
+      ],
+      "working_directory": "."
+    },
+    "/ip-select-cat": {
+      "description": "显示具体职业选择器",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\ip-intro-generator.js",
+        "--select",
+        "--category",
+        "{category}"
+      ],
+      "working_directory": "."
+    },
+    "/ip-flow": {
+      "description": "查看通用问答流程",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\ip-intro-generator.js",
+        "--flow"
+      ],
+      "working_directory": "."
+    },
+    "/ip-flow-prof": {
+      "description": "查看职业定制化问题",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\ip-intro-generator.js",
+        "--profession-flow",
+        "--profession",
+        "{code}"
+      ],
+      "working_directory": "."
+    },
+    "/ip-example": {
+      "description": "查看原版生成示例（30句）",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\ip-intro-generator.js",
+        "--example"
+      ],
+      "working_directory": "."
+    },
+    "/ip-example-enhanced": {
+      "description": "查看增强版生成示例（50句+人设确认）",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\ip-intro-generator.js",
+        "--enhanced"
+      ],
+      "working_directory": "."
+    },
+    "/ip-selection-flow": {
+      "description": "查看完整选择流程说明",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\ip-intro-generator.js",
+        "--selection-flow"
+      ],
+      "working_directory": "."
+    },
+    "/ip-web": {
+      "description": "在浏览器中打开Web界面",
+      "command": "cmd",
+      "args": [
+        "/c",
+        "start",
+        "E:\\Claude Code\\claude\\ip-intro-generator.html"
+      ],
+      "working_directory": "."
+    }
+  }
+}

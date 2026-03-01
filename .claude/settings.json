@@ -1,0 +1,120 @@
+{
+  "skills": {
+    "life-story": {
+      "description": "人生故事工作台 - 通过深度访谈挖掘和整理个人故事",
+      "triggerKeywords": ["人生故事", "个人故事", "访谈", "个人IP", "自传"]
+    },
+    "ip-intro-generator": {
+      "description": "IP自我介绍生成器 - 生成高转化率的IP自我介绍",
+      "triggerKeywords": ["IP介绍", "自我介绍", "个人介绍", "IP生成"]
+    },
+    "side-hustle-assessment": {
+      "description": "副业适合度测评 - 评估副业适合度，5大维度深度分析",
+      "triggerKeywords": ["副业", "测评", "副业测评", "适合度"]
+    },
+    "youth-learning-coach": {
+      "description": "青少年学习教练 - 青少年学习力文章写作助手",
+      "triggerKeywords": ["青少年", "学习教练", "教育文章", "学习力"]
+    },
+    "finance-content-generator": {
+      "description": "财税审计内容生成器 - 财税审计类公众号内容生成",
+      "triggerKeywords": ["财税", "审计", "税务", "财务文章"]
+    },
+    "murder-mystery-generator": {
+      "description": "培训体验类剧本杀编写器 - 生成培训体验类剧本杀",
+      "triggerKeywords": ["剧本杀", "培训剧本", "角色扮演", "murder"]
+    },
+    "training-outline-generator": {
+      "description": "专业技能培训课程大纲生成器 - 生成专业技能培训课程大纲",
+      "triggerKeywords": ["培训大纲", "课程大纲", "培训课程", "training"]
+    },
+    "skill-card-generator": {
+      "description": "剧本杀技能卡生成器 - 生成剧本杀技能卡",
+      "triggerKeywords": ["技能卡", "角色技能", "skill-card"]
+    },
+    "article-analyzer": {
+      "description": "文章分析器 - 分析对标文章结构风格",
+      "triggerKeywords": ["文章分析", "对标分析", "风格分析"]
+    },
+    "conversion-story-generator": {
+      "description": "成交型叙事生成器 - 根据目的/读者/行业定制的成交型叙事",
+      "triggerKeywords": ["成交文案", "转化故事", "pitch", "成交型"]
+    },
+    "editorial-workflow": {
+      "description": "编辑部工作流 - 编辑部完整评审工作流",
+      "triggerKeywords": ["编辑部", "文章评审", "评审流程"]
+    },
+    "code-reviewer": {
+      "description": "代码审查助手 - 专业代码审查，检查正确性、安全性、性能",
+      "triggerKeywords": ["代码审查", "code review", "代码检查"]
+    },
+    "content-writer": {
+      "description": "内容写作助手 - 自媒体文案生成专家",
+      "triggerKeywords": ["文案", "自媒体", "推文", "内容生成"]
+    },
+    "polish-expert": {
+      "description": "文本润色专家 - 专业文案润色",
+      "triggerKeywords": ["润色", "优化", "文字润色", "polish"]
+    },
+    "article-image-generator": {
+      "description": "文章配图生成器 - 为文章生成配图提示词",
+      "triggerKeywords": ["配图", "文章配图", "图片生成"]
+    },
+    "youth-learning-article-writer": {
+      "description": "青少年学习文章写作 - 青少年学习力文章写作",
+      "triggerKeywords": ["学习文章", "青少年文章", "教育文章"]
+    },
+    "image-assistant": {
+      "description": "配图助手 - 把文章内容转成16:9信息图提示词",
+      "triggerKeywords": ["配图", "信息图", "出图", "image"]
+    },
+    "thought-mining": {
+      "description": "思维挖掘助手 - 从零散想法到成稿的5阶段流程",
+      "triggerKeywords": ["思维挖掘", "整理想法", "写作", "文章"]
+    },
+    "prd-doc-writer": {
+      "description": "PRD文档撰写助手 - 以故事驱动的方式撰写PRD/需求文档",
+      "triggerKeywords": ["PRD", "需求文档", "产品文档"]
+    },
+    "req-change-workflow": {
+      "description": "需求变更工作流 - 标准化需求变更流程",
+      "triggerKeywords": ["需求变更", "改需求", "需求流程"]
+    },
+    "lesson-builder": {
+      "description": "课程构建器 - 通过讨论驱动的方式完成课程大纲和课件",
+      "triggerKeywords": ["备课", "课件", "课程", "lesson"]
+    },
+    "project-map-builder": {
+      "description": "项目目录地图构建器 - 生成或增量更新目录说明文档",
+      "triggerKeywords": ["项目地图", "目录说明", "PROJECT_MAP"]
+    },
+    "version-planner": {
+      "description": "版本规划助手 - 将产品需求拆解成渐进式版本规划",
+      "triggerKeywords": ["版本规划", "MVP", "拆版本"]
+    },
+    "writing-assistant": {
+      "description": "写作助手 - 根据观点清晰度自动选择最优写作路线",
+      "triggerKeywords": ["写作", "写文章", "梳理选题"]
+    },
+    "weekly-report": {
+      "description": "周报写作助手 - 帮助梳理周报，展示工作价值",
+      "triggerKeywords": ["周报", "工作汇报", "weekly"]
+    },
+    "priority-judge": {
+      "description": "优先级判断助手 - 从混沌待办中判断优先级",
+      "triggerKeywords": ["优先级", "待办", "今天做什么"]
+    },
+    "thinking-partner": {
+      "description": "思考拍档 - 陪你从混沌中理清局面，锁定核心问题",
+      "triggerKeywords": ["思考", "理清", "拍档"]
+    },
+    "ui-design": {
+      "description": "UI样式修改助手 - UI样式修改协作流程",
+      "triggerKeywords": ["UI", "样式", "布局"]
+    },
+    "wechat-article-writer": {
+      "description": "公众号写作助手 - 专注公众号文章创作，从选题到成稿的完整流程",
+      "triggerKeywords": ["公众号", "写公众号", "公众号文章", "推文", "wechat"]
+    }
+  }
+}

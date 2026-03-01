@@ -1,0 +1,48 @@
+{
+  "skills": {
+    "/side-hustle": {
+      "description": "启动副业适合度测评（交互式）",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\side-hustle-assessment.js"
+      ],
+      "working_directory": "."
+    },
+    "/side-hustle-quick": {
+      "description": "快速测评版（10个核心问题）",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\side-hustle-assessment.js",
+        "quick"
+      ],
+      "working_directory": "."
+    },
+    "/side-hustle-full": {
+      "description": "完整测评版（5大维度深度分析）",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\side-hustle-assessment.js",
+        "full"
+      ],
+      "working_directory": "."
+    },
+    "/side-hustle-types": {
+      "description": "查看副业类型库",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\side-hustle-assessment.js",
+        "types"
+      ],
+      "working_directory": "."
+    },
+    "/side-hustle-help": {
+      "description": "查看测评工具帮助",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\side-hustle-assessment.js",
+        "help"
+      ],
+      "working_directory": "."
+    }
+  }
+}

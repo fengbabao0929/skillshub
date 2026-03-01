@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{title}}</title>
+  <style>
+    /* 全局样式 */
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Segoe UI", Roboto, sans-serif;
+      line-height: 1.8;
+      color: #333;
+      max-width: 677px;
+      margin: 0 auto;
+      padding: 0;
+      background: #fff;
+    }
+
+    /* 容器 */
+    .container {
+      padding: 20px;
+    }
+
+    /* 标题样式 */
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 32px;
+      margin-bottom: 16px;
+      font-weight: 600;
+      line-height: 1.4;
+      color: #1a1a1a;
+    }
+
+    h1 {
+      font-size: 28px;
+      border-bottom: 3px solid #576b95;
+      padding-bottom: 12px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 22px;
+      border-left: 4px solid #576b95;
+      padding-left: 12px;
+      margin-top: 40px;
+    }
+
+    h3 {
+      font-size: 18px;
+      margin-top: 24px;
+      color: #444;
+    }
+
+    h4 {
+      font-size: 16px;
+      color: #666;
+    }
+
+    /* 段落 */
+    p {
+      margin-bottom: 16px;
+      text-align: justify;
+    }
+
+    /* 强调文字 */
+    strong, b {
+      font-weight: 700;
+      color: #1a1a1a;
+    }
+
+    /* 引用块 - 重要的金句 */
+    blockquote {
+      border-left: 4px solid #576b95;
+      padding: 16px 20px;
+      margin: 24px 0;
+      background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+      color: #2c3e50;
+      font-style: italic;
+      border-radius: 0 8px 8px 0;
+    }
+
+    blockquote p {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    /* 代码块 */
+    code {
+      background: #f5f5f5;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-family: "Consolas", "Monaco", "Courier New", monospace;
+      font-size: 14px;
+      color: #e74c3c;
+    }
+
+    pre {
+      background: #2c3e50;
+      color: #ecf0f1;
+      padding: 16px;
+      border-radius: 8px;
+      overflow-x: auto;
+      margin: 20px 0;
+    }
+
+    pre code {
+      background: none;
+      padding: 0;
+      color: #ecf0f1;
+      font-size: 13px;
+    }
+
+    /* 列表 */
+    ul, ol {
+      padding-left: 24px;
+      margin: 16px 0;
+    }
+
+    li {
+      margin-bottom: 8px;
+      line-height: 1.7;
+    }
+
+    /* 检查框样式 - 用于 ✅/❌ */
+    .checklist {
+      list-style: none;
+      padding-left: 0;
+      margin: 20px 0;
+    }
+
+    .checklist li {
+      padding: 10px 0;
+      padding-left: 32px;
+      position: relative;
+    }
+
+    .checklist li:before {
+      position: absolute;
+      left: 0;
+      font-size: 20px;
+    }
+
+    .checklist.success li:before {
+      content: "✅";
+    }
+
+    .checklist.error li:before {
+      content: "❌";
+    }
+
+    /* 分隔线 */
+    hr {
+      border: none;
+      border-top: 2px dashed #ddd;
+      margin: 40px 0;
+    }
+
+    /* 图片 */
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 24px auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    /* 链接 */
+    a {
+      color: #576b95;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+
+    a:hover {
+      border-bottom-color: #576b95;
+    }
+
+    /* 表格 */
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 24px 0;
+      font-size: 14px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    table th, table td {
+      border: 1px solid #e0e0e0;
+      padding: 12px 16px;
+      text-align: left;
+    }
+
+    table th {
+      background: linear-gradient(135deg, #576b95 0%, #4a5c7a 100%);
+      color: #fff;
+      font-weight: 600;
+    }
+
+    table tr:nth-child(even) {
+      background: #f8f9fa;
+    }
+
+    table tr:hover {
+      background: #e9ecef;
+    }
+
+    /* 重点框 */
+    .highlight-box {
+      background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+      border-left: 4px solid #f39c12;
+      padding: 16px 20px;
+      margin: 20px 0;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .highlight-box.info {
+      background: linear-gradient(135deg, #d1ecf1 0%, #bee5eb 100%);
+      border-left-color: #17a2b8;
+    }
+
+    .highlight-box.success {
+      background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
+      border-left-color: #28a745;
+    }
+
+    .highlight-box.warning {
+      background: linear-gradient(135deg, #f8d7da 0%, #f5c6cb 100%);
+      border-left-color: #dc3545;
+    }
+
+    /* 作者信息 */
+    .author-info {
+      color: #888;
+      font-size: 14px;
+      margin: 10px 0 20px;
+      padding: 12px;
+      background: #f8f9fa;
+      border-radius: 8px;
+    }
+
+    /* 章节编号样式 */
+    .section-number {
+      display: inline-block;
+      background: #576b95;
+      color: #fff;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: 600;
+      margin-right: 8px;
+    }
+
+    /* 数据标注 */
+    .data-label {
+      display: inline-block;
+      background: #e9ecef;
+      color: #495057;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      margin-left: 8px;
+    }
+
+    /* 结尾 */
+    .footer {
+      margin-top: 60px;
+      padding-top: 30px;
+      border-top: 2px solid #eee;
+      text-align: center;
+      color: #888;
+      font-size: 14px;
+    }
+
+    .footer p {
+      margin: 8px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>{{title}}</h1>
+    {{author}}<div class="author-info">作者：{{author}}</div>{{/author}}
+    {{subtitle}}<p style="color: #666; font-size: 16px; margin-bottom: 24px;">{{subtitle}}</p>{{/subtitle}}
+    <hr>
+    {{content}}
+    <div class="footer">
+      <p><strong>关注我们</strong></p>
+      <p>陪你一起在AI时代实现职业跃迁</p>
+      <p style="margin-top: 16px;">— END —</p>
+    </div>
+  </div>
+</body>
+</html>

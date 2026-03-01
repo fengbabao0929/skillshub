@@ -1,0 +1,134 @@
+{
+  "skills": {
+    "/youth": {
+      "description": "青少年学习教练公众号内容生成器（交互模式）",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\youth-learning-coach-generator.cjs"
+      ],
+      "working_directory": "."
+    },
+    "/youth-article": {
+      "description": "生成青少年学习教练公众号文章",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\youth-learning-coach-generator.cjs",
+        "--topic",
+        "{topic}",
+        "--save"
+      ],
+      "working_directory": "."
+    },
+    "/youth-pain": {
+      "description": "生成痛点分析类文章",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\youth-learning-coach-generator.cjs",
+        "--topic",
+        "{topic}",
+        "--type",
+        "痛点分析",
+        "--save"
+      ],
+      "working_directory": "."
+    },
+    "/youth-method": {
+      "description": "生成方法指导类文章",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\youth-learning-coach-generator.cjs",
+        "--topic",
+        "{topic}",
+        "--type",
+        "方法指导",
+        "--save"
+      ],
+      "working_directory": "."
+    },
+    "/youth-case": {
+      "description": "生成案例故事类文章",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\youth-learning-coach-generator.cjs",
+        "--topic",
+        "{topic}",
+        "--type",
+        "案例故事",
+        "--save"
+      ],
+      "working_directory": "."
+    },
+    "/youth-anxiety": {
+      "description": "生成家长焦虑类文章",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\youth-learning-coach-generator.cjs",
+        "--topic",
+        "{topic}",
+        "--type",
+        "家长焦虑",
+        "--save"
+      ],
+      "working_directory": "."
+    },
+    "/youth-habit": {
+      "description": "生成习惯培养类文章",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\youth-learning-coach-generator.cjs",
+        "--topic",
+        "{topic}",
+        "--type",
+        "习惯培养",
+        "--save"
+      ],
+      "working_directory": "."
+    },
+    "/youth-exam": {
+      "description": "生成考试辅导类文章",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\youth-learning-coach-generator.cjs",
+        "--topic",
+        "{topic}",
+        "--type",
+        "考试辅导",
+        "--save"
+      ],
+      "working_directory": "."
+    },
+    "/youth-topics": {
+      "description": "查看所有热门文章主题",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\youth-learning-coach-generator.cjs",
+        "--list-topics"
+      ],
+      "working_directory": "."
+    },
+    "/youth-outline": {
+      "description": "生成文章大纲",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\youth-learning-coach-generator.cjs",
+        "--topic",
+        "{topic}",
+        "--format",
+        "outline"
+      ],
+      "working_directory": "."
+    },
+    "/youth-titles": {
+      "description": "生成爆款标题选项",
+      "command": "node",
+      "args": [
+        "E:\\Claude Code\\claude\\skills\\youth-learning-coach-generator.cjs",
+        "--topic",
+        "{topic}",
+        "--format",
+        "titles"
+      ],
+      "working_directory": "."
+    }
+  }
+}
