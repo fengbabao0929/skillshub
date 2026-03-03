@@ -1,4 +1,4 @@
-# 云舒的 Skills 搭子们 / Yunshu's Claude Code Skills
+# 八宝的 Skills 搭子们 / Babao's Claude Code Skills
 
 [English](#english) | [中文](#中文)
 
